@@ -1,0 +1,28 @@
+{
+	"name": "tried",
+	"description": "A simple, small, zero dependency try-catch wrapper.",
+	"author": {
+		"name": "borisnliscool",
+		"url": "https://github.com/borisnliscool"
+	},
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/borisnliscool/tried",
+		"type": "git"
+	},
+	"type": "module",
+	"module": "src/index.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rimraf dist && tsc --project tsconfig.build.json && uglifyjs dist/index.js -c -m -o dist/index.js",
+		"publish": "bun run build && npm publish"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"devDependencies": {
+		"rimraf": "^6.0.1",
+		"uglify-js": "^3.19.3"
+	}
+}
