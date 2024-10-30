@@ -1,5 +1,5 @@
 {
-	"name": "tried",
+	"name": "@borisnl/tried",
 	"description": "A simple, small, zero dependency try-catch wrapper.",
 	"version": "1.0.0",
 	"author": {
@@ -17,7 +17,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "rimraf dist && tsc --project tsconfig.build.json && uglifyjs dist/index.js -c -m -o dist/index.js",
-		"publish": "bun run build && npm publish"
+		"publish": "bun run build && npm publish --access public"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"

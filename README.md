@@ -4,10 +4,10 @@ A simple, small, zero dependency try-catch wrapper. It provides a safe way to ha
 
 ## Installation
 
-Install the package using `npm install tried` or your package manager's equivalent.
+Install the package using `npm install @borisnl/tried` or your package manager's equivalent.
 
 ```bash
-npm install tried
+npm install @borisnl/tried
 ```
 
 ## Syntax
