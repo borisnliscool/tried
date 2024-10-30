@@ -34,6 +34,15 @@ test("Synchronous tests", () => {
 			() => "fallback"
 		)
 	).toBe("fallback");
+
+	expect(
+		Try(
+			() => {
+				throw new Error();
+			},
+			() => {}
+		)
+	).toBe(null);
 });
 
 test("Async tests", async () => {
@@ -72,4 +81,13 @@ test("Async tests", async () => {
 	).toBe("fallback");
 
 	expect(Try(async () => 2 + 2)).toEqual(Promise.resolve(4));
+
+	expect(
+		await Try(
+			async () => {
+				throw new Error();
+			},
+			() => {}
+		)
+	).toEqual(null);
 });
