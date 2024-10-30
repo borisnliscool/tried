@@ -1,7 +1,7 @@
 {
 	"name": "@borisnl/tried",
 	"description": "A simple, small, zero dependency try-catch wrapper.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"name": "borisnliscool",
 		"url": "https://github.com/borisnliscool"
@@ -17,7 +17,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "rimraf dist && tsc --project tsconfig.build.json && uglifyjs dist/index.js -c -m -o dist/index.js",
-		"publish": "bun run build && npm publish --access public"
+		"prepublish": "bun run build"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
