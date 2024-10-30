@@ -1,6 +1,7 @@
 {
 	"name": "tried",
 	"description": "A simple, small, zero dependency try-catch wrapper.",
+	"version": "1.0.0",
 	"author": {
 		"name": "borisnliscool",
 		"url": "https://github.com/borisnliscool"
