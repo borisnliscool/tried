@@ -1,6 +1,6 @@
 export type Tried<T> = T extends Promise<never>
-	? Promise<Awaited<T> | null | undefined>
-	: T | null | undefined;
+	? Promise<Awaited<T> | null>
+	: T | null;
 
 /**
  * Calls a function and returns the result, or null if it throws an error.
